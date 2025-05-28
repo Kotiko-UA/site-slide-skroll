@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nested Swiper with Controlled Scroll</title>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="swiper main-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide-1">Головний Слайд 1</div>
+				<div class="swiper-slide slide-2">Головний Слайд 2</div>
+				<div class="swiper-slide slide-3">
+					<div class="swiper nested-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide sub-1">Підслайд 1</div>
+							<div class="swiper-slide sub-2">Підслайд 2</div>
+							<div class="swiper-slide sub-3">Підслайд 3</div>
+						</div>
+						<div class="swiper-pagination nested-pagination"></div>
+					</div>
+				</div>
+				<div class="swiper-slide slide-4">Головний Слайд 4</div>
+				<div class="swiper-slide slide-5">Головний Слайд 5</div>
+			</div>
+			<div class="swiper-pagination main-pagination"></div>
+		</div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
